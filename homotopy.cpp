@@ -49,7 +49,7 @@ int main() {
   size_t cnt = 0;
   std::stack<size_t> stack;
   std::vector<bool> used(2 * n);
-  for (int i = 0; i < 2 * n; ++i) {
+  for (size_t i = 0; i < 2 * n; ++i) {
     if (used[i]) {
       continue;
     }
