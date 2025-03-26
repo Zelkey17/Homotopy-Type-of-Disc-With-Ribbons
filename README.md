@@ -37,11 +37,11 @@ The program works as follows:
 
 4. **Homotopy calculation:**  
    The number of handles **n** and boundary components **b** are derived using the Euler characteristic of the surface. Specifically:
-   - The number of handles is calculated as `(n / 2 + 1 - cnt) / 2`, where `n` is the length of the input string and `cnt` is the number of boundary components found.
+   - The number of handles is calculated as `(n / 2 + 1 - b) / 2`, where `n` is the length of the input string and `b` is the number of boundary components found.
    - The program ensures the minimum number of boundary components is 1 for an empty string.
 
 
 ## Background
 
-This program was developed as part of the **"Discrete Structures and Algorithms in Topology"** course by **A.B. Skopenkov** at Moscow Institute of Physics and Technology.  
+This program was developed as part of the **"Discrete Structures and Algorithms in Topology"** course by **A. Rukhovich** and **A. Skopenkov** at Moscow Institute of Physics and Technology.  
 Course website: [Введение в топологию](https://old.mccme.ru//circles//oim/home/combtop13.htm#fivt).
