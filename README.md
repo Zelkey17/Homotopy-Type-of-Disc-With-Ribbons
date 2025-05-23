@@ -58,5 +58,5 @@ The program works as follows:
 
 ## Background
 
-This program was developed as part of the **"Discrete Structures and Algorithms in Topology"** course by **A. Rukhovich** and **A. Skopenkov** at Moscow Institute of Physics and Technology.  
+This program was developed as part of the **"Discrete Structures and Algorithms in Topology"** course by **A. Skopenkov** and **A. Rukhovich** at Moscow Institute of Physics and Technology.  
 Course website: [Введение в топологию](https://old.mccme.ru//circles//oim/home/combtop13.htm#fivt).
