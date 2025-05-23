@@ -28,6 +28,8 @@ g++ -o ribbon_disk ribbon_disk.cpp
 
 ## Algorithm Overview
 
+The program works as follows:
+
 1. **Input Validation**
 
    * Ensure that each character in the input string appears exactly twice. Otherwise, throw an exception.
@@ -45,17 +47,16 @@ g++ -o ribbon_disk ribbon_disk.cpp
 
 4. **Computation of Handles and Boundaries**
 
-   * Let $L$ be the length of the input string and $b$ the number of boundary components found.
-   * The number of edges $E$ equals $L$ (ribbon edges) plus $L/2$ (matching edges), and the vertices $V$ equal $L$.
-   * Compute the Euler characteristic:  $\chi = V - E$.
-   * For a surface homeomorphic to a sphere with $n$ handles and $b$ boundaries,  $\chi = 2 - 2n - b$.
-   * Solve for $n$:  $n = (2 - b - \chi) / 2$.
-
+   The number of handles **n** and boundary components **b** are derived using the Euler characteristic of the surface. Specifically:
+   - The number of handles is calculated as (n / 2 + 1 - b) / 2, where n is the length of the input string and b is the number of boundary components found.
+   - The program ensures the minimum number of boundary components is 1 for an empty string.
+   - 
 5. **Output**
 
    * Print a message stating that the ribbon disk is homeomorphic to a sphere with the computed numbers of handles and boundary components.
 
+
 ## Background
 
-This program was developed as part of the **"Discrete Structures and Algorithms in Topology"** course by **A. Rukhovich** and **A. Skopenkov** at the Moscow Institute of Physics and Technology.
-Course website: [Введение в топологию](https://old.mccme.ru/circles/oim/home/combtop13.htm#fivt)
+This program was developed as part of the **"Discrete Structures and Algorithms in Topology"** course by **A. Rukhovich** and **A. Skopenkov** at Moscow Institute of Physics and Technology.  
+Course website: [Введение в топологию](https://old.mccme.ru//circles//oim/home/combtop13.htm#fivt).
