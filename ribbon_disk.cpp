@@ -71,7 +71,7 @@ int main() {
   
   cnt = std::max(cnt, 1ul); // an empty string situation
   
-  std::cout << "The ribbon disk is homeomorphic to a sphere with " << (n / 2 + 1 - cnt) / 2 <<
-            " handles and " << cnt << " holes.";
+  std::cout << "The ribbon disk is homeomorphic to a sphere with " << (n / 2 + 1 - cnt) / 2
+            << "handles and " << cnt << " boundary components." << std::endl;
 
 }
