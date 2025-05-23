@@ -50,7 +50,7 @@ The program works as follows:
    The number of handles **n** and boundary components **b** are derived using the Euler characteristic of the surface. Specifically:
    - The number of handles is calculated as (n / 2 + 1 - b) / 2, where n is the length of the input string and b is the number of boundary components found.
    - The program ensures the minimum number of boundary components is 1 for an empty string.
-   - 
+    
 5. **Output**
 
    * Print a message stating that the ribbon disk is homeomorphic to a sphere with the computed numbers of handles and boundary components.
